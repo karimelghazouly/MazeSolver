@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="new" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/new" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="/usr/local/include/opencv" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<Linker>
+					<Add library="opencv_shape" />
+					<Add library="opencv_stitching" />
+					<Add library="opencv_objdetect" />
+					<Add library="opencv_superres" />
+					<Add library="opencv_videostab" />
+					<Add library="opencv_calib3d" />
+					<Add library="opencv_features2d" />
+					<Add library="opencv_highgui" />
+					<Add library="opencv_videoio" />
+					<Add library="opencv_imgcodecs" />
+					<Add library="opencv_video" />
+					<Add library="opencv_photo" />
+					<Add library="opencv_ml" />
+					<Add library="opencv_imgproc" />
+					<Add library="opencv_flann" />
+					<Add library="opencv_core" />
+					<Add directory="/usr/local/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/new" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
